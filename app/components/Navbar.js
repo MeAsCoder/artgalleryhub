@@ -37,7 +37,7 @@ const Navbar = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await fetch('https://localhost:9937/api/product/allCategories');
+        const response = await fetch('https://11d2-41-90-185-8.ngrok-free.app/api/product/allCategories');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }

@@ -14,7 +14,7 @@ export default function Home() {
     // Fetch data from the API
     const fetchProducts = async () => {
       try {
-        const response = await fetch("https://localhost:9937/api/product/allProducts");
+        const response = await fetch("https://11d2-41-90-185-8.ngrok-free.app/api/product/allProducts");
         const data = await response.json();
         setProducts(data); // Set the fetched products array to state
       } catch (error) {
